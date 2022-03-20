@@ -1,0 +1,182 @@
+*{
+    font-family: 'Gamja Flower';
+}
+body{
+    width: 500px;
+    flex-direction: column;
+    position: relative;
+    bottom: 30px;
+}
+.id{
+    width: 120px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.id img{
+    width:20px;
+    height: 20px;
+    align-self: center;
+}
+.top{
+    position: relative;
+    top:20px;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.menu{
+    display: inline-flex;
+    width: 80px;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu img{
+    width: 25px;
+    height: 25px;
+}
+.info{
+    width:500px;
+    flex-direction: row;
+    align-items: center;
+}
+.photo{
+    display: inline-flex;
+}
+.photo img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+.information{
+    display: inline-flex;
+    width: 300px;
+    flex-direction: column;
+    position:relative;
+    bottom: 60px;
+}
+.number{
+    position: relative;
+    left: 7px;
+    display: flex;
+    justify-content: space-around;
+    font-size: larger;
+}
+.name{
+    position: relative;
+    bottom: 7px;
+    display: flex;
+    justify-content: space-around;
+}
+.aboutme{
+    width: 500px;
+    height: 50px;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:flex-start;
+}
+#name{
+    position:relative;
+    bottom: 55px;
+    left:15px;
+}
+#school{
+    position:relative;
+    bottom:85px;
+    left: 15px;
+}
+.profileicon{
+    position: relative;
+    bottom: 35px;
+    display: flex;
+    width: 400px;
+    justify-content: space-around;
+}
+.box1{
+    width:400px;
+    height: 30px;
+    border: 1px solid rgb(184, 181, 181);
+    border-radius: 5px;
+    padding-left: 150px;
+    padding-right: 150px;
+    justify-content: center;
+}
+.box1 p{
+    position: relative;
+    bottom: 10px;
+}
+.box2{
+    width:30px;
+    height: 30px;
+    border: 1px solid rgb(184, 181, 181);
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.box2 img{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top:7px;
+}
+.photoicon{
+    position: relative;
+    bottom: 40px;
+    width: 400px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#grid{
+    width:25px;
+    position: relative;
+    top: 10px;
+    right: 20px;
+}
+#play{
+    position: relative;
+    top:10px;
+}
+#account{
+    position: relative;
+    top:9px;
+    left: 16px;
+}
+.uploads{
+    position: relative;
+    bottom: 30px;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.uploads img{
+    width: 129px;
+    height: 129px;
+}
+.icons{
+    width: 400px;
+    height: 30px;
+    position: relative;
+    bottom: 28px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.icons img{
+    width: 23px;
+    height: 23px;
+}
+#mine{
+    border-radius: 50px;
+}
+footer{
+    position: relative;
+    bottom: 5px;
+}
