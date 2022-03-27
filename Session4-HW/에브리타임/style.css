@@ -1,0 +1,222 @@
+*{
+    font-family: 'Dongle';}
+}
+body{
+    width: 500px;
+    flex-direction: column;
+    position: relative;
+    bottom: 60px;
+}
+
+.title{
+    position: relative;
+    top:5px;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.everytime{
+    color : red;
+    font-size: 15pt;
+    position: relative;
+    left: 10px;
+    bottom: 20px;
+}
+#school{
+    font-size: 23pt;
+    color : black;
+    position: relative;
+    bottom:30px;
+}
+
+.menu{
+    position: relative;
+    top:40px;
+}
+
+.bulb img{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 40px;
+    left :40px;
+}
+.up{
+    display: flex;
+    flex-direction: row;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+}
+#big{
+    font-size: 20pt;
+    position: relative;
+    left: 50px;
+    top: 10px;
+    color: black;
+}
+.info p{
+    font-size: 15pt;
+    position: relative;
+    left: 50px;
+    bottom: 40px;
+    color: orange;
+}
+.down{
+    font-size: 15pt;
+    position: relative;
+    left: 80px;
+    bottom: 60px;
+}
+
+.help{
+    width:400px;
+    height:170px;
+    border: 3px solid #eee;
+    border-radius:20px;
+    position: relative;
+    bottom: 55px;
+}
+.icons{
+    width: 400px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 45px;
+}
+.icon{
+    width: 400px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.icon img{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    bottom:5px;
+    border: 5px solid #eee;
+    background-color: #eee;
+    border-radius: 50px;
+
+}
+.name{
+    width: 400px;
+    height: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    bottom:20px;
+}
+.name p{
+    font-size: 15pt;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    line-height: 15pt;
+}
+.ad{
+    display: flex;
+    position: relative;
+    top:30px;
+}
+.ad img{
+    width: 400px;
+    height: 80px;
+    border: 1px solid white;
+    border-radius: 20px;
+    display: flex;
+}
+.board{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #eee;
+    border-radius: 15px;
+    width: 400px;
+    height: 350px;
+    position: relative;
+    top:35px;
+}
+.top{
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#title{
+    width:200px;
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+    left: 30px;
+    bottom: 5px;
+}
+#more{
+    width: 200px;
+    color: red;
+    font-size: 18px;
+    position: relative;
+    left: 110px;
+    top : 5px;
+}
+.boardname{
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 12pt;
+    position: relative;
+    left: 20px;
+    bottom: 15px;
+    line-height: 3px;
+}
+.seperate{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    bottom: 7px;
+}
+.posting{
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 20px;
+    bottom: 15px;
+    line-height: 3px;
+}
+.new{
+    width: 50px;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-between;
+    left: 120px;
+    bottom:9px;
+}
+.new img{
+    width: 18px;
+    height: 18px;
+}
+.bottomicons{
+    width: 400px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    top:380px;
+}
+.bottomicons img{
+    width: 25px;
+    height: 25px;
+}
