@@ -10,7 +10,9 @@
     <link rel="stylesheet" type="text/css" href="{% static 'result.css' %}" />
 </head>
 <body>
-    <h1>단어 수는 {{wordcount}}개 입니다!</h1>
+    <h3>단어 수 : {{wordcount}}</h3>
+    <h3>글자 수 : {{total_len}}</h3>
+    <h3>공백 제외 : {{no_blank_len}}</h3>
     <img src="./num2.png" />
 </body>
 </html>
