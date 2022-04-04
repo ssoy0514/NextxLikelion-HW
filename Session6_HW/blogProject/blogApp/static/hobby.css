@@ -1,0 +1,25 @@
+body{
+    color : darkblue;
+    background-color: rgba(130, 209, 254, 0.997);
+    font-family: "Jua";
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    min-height:100vh;
+    text-align: center;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.underbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}

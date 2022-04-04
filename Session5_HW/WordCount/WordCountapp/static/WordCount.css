@@ -13,3 +13,9 @@ form{
     top : 100px;
     left: 600px;
 }
+
+img{
+    position: relative;
+    bottom: 300px;
+    left: 300px;
+}
