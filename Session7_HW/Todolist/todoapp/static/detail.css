@@ -1,0 +1,12 @@
+body{
+    color : darkblue;
+    background-color: rgba(130, 209, 254, 0.997);
+    font-family: "Jua";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    min-height: 500px;
+    min-width: 300px;
+}

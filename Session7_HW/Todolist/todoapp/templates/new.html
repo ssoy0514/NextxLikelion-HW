@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'home.css' %}" />
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Poor+Story&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form action="" method="post">
+        {% csrf_token %}
+        <div>
+            <label for="title">할 일</label>
+            <input type="text" name="title" id="title" placeholder="할 일을 입력해주세요">
+        </div>
+        <div>
+            <label for="content">내용</label>
+            <textarea name="content" id="content" cols="20" rows="10" placeholder="내용을 입력해주세요"></textarea>
+        </div>
+        <div>
+            <label for="deadline">마감 기간</label>
+            <input type="date" name="deadline" id="deadline" placeholder="마감기한">
+        </div>
+        <button type="submit">저장</button> 
+    </form>
+</body>
+</html>
