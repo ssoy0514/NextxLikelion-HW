@@ -1,0 +1,31 @@
+body{
+    color : darkblue;
+    background-color: rgba(173, 240, 197, 0.997);
+    font-family: "Jua";
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    width: 700px;
+}
+
+.major{
+    color : darkslateblue;
+    font-family: "Jua";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.subject{
+    color : darkslateblue;
+    font-family: "Jua";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
