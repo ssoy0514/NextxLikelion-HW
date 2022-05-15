@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'edit.css' %}" />
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Poor+Story&display=swap" rel="stylesheet"></head>
+<body>
+    <h1>Dear Diary</h1>
+    <form action="/new" method="post">
+        {% csrf_token %}
+        <div>
+            <h3>제목</h3><input type="text" name="title" value="{{post.title}}">
+            <br>
+            <h3>내용</h3>
+            <textarea name="content" cols="20" rows="20">{{post.content}}</textarea>
+        </div>
+        <button type="submit">edit</button>
+    </form>   
+</body>
+</html>

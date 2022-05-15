@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'detail.css' %}" />
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Poor+Story&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h2>Diary</h2>
+    <div>
+        <h4>제목</h4>
+        {{ post.title}}
+    </div>
+    <div class="list">
+        <h4>내용</h4>
+        {{ post.content}}
+    </div>
+    <a href = "{% url 'list' %}">목록</a>
+    <a href="{% url 'edit' post.pk %}">수정</a>
+    <a href="{% url 'delete' post.pk %}">삭제</a>
+    <br>
+    <br>
+    <form method="POST">
+        {% csrf_token %}
+        <input type = "text" name="content" placeholder="댓글을 입력해주세요">
+        <button type="submit">작성하기</button>
+    </form>
+    {% for comment in post.comments.all %}
+    <li>
+        {{comment.content}}
+            <a href="{% url 'delete_comment' post.pk comment.pk %}">삭제</a>
+    </li>
+    {% endfor %}
+</body>
+
+</html>

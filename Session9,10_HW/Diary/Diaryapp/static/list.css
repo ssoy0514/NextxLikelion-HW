@@ -1,0 +1,17 @@
+body{
+    color : rgb(56, 0, 133);
+    background-color:rgb(246, 246, 246);
+    display: center;
+    font-family: "Jua";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    min-height: 500px;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+}
