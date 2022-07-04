@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'home.css' %}" />
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Poor+Story&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="major">
+        <h2>모든 전공</h2>
+        <ul>{% for major in majors %}
+        <li>{{ major.name }}</li>
+        
+        {% endfor %}
+        </ul>
+        <a href = "{% url 'addMajor' %}">전공 추가</a>
+
+
+    </div>
+
+    <div class="subject">        
+        <h2>모든 과목</h2>
+        <a href = "{% url 'addSubject' %}"> 과목 추가</a>
+        <ol>
+    {% for subject in subjects %}
+    <div>
+        <li>
+            <div>
+                <span class="bold">{{subject.subject_name}}</span>
+                <span>| {{subject.major}} |</span>
+                <span>{{ subject.prof_name }} </span>
+
+                <div class = "memo">{{ subject.memo|linebreaks }}</div>
+                <a href="{% url 'editSubject' subject.pk %}" class = "button">수정</a>
+                <a href="{% url 'deleteSubject' subject.pk %}" class="button">삭제</a>
+            </div>
+            
+        </li>
+    </div>
+    {% endfor %}
+        </ol>
+    </div>
+</body>
+</html>

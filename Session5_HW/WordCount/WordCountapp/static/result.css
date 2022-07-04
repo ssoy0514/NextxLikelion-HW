@@ -1,0 +1,11 @@
+body{
+    color : blueviolet;
+    background-color: rgb(194, 224, 214);
+}
+
+h3{
+    position: relative;
+    top: 300px;
+    left: 600px;
+    font-family: Jua;
+}

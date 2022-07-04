@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(194, 224, 214);
+}
+h1{
+    font-family: 'Jua';
+    color : rgb(59, 59, 182);
+    position: relative;
+    top : 400px;
+    left: 580px;
+}
+form{
+    position:relative;
+    top : 100px;
+    left: 600px;
+}
+
+img{
+    position: relative;
+    bottom: 300px;
+    left: 300px;
+}

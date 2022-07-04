@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>List</title>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'list.css' %}" />
+        <link href="https://fonts.googleapis.com/css2?family=Jua&family=Poor+Story&display=swap" rel="stylesheet">
+    </head>
+    <img src="{% static 'listpage.png' %}" />
+    <body>
+        <h2>CATEGORY</h2>
+        <ul>
+            {% for article in articles %}
+            <li>
+                <a href="{% url 'detail' article.id %}">{{article.title}}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    
+        <div class="link">
+            <li><a href ="{% url 'hobby' %}">hobby</a>&nbsp;&nbsp;{{ hobby_num }}</li>
+            <li><a href ="{% url 'food' %}">food</a>&nbsp;&nbsp;{{ food_num }}</li>   
+            <li><a href ="{% url 'programing' %}">programing</a>&nbsp;&nbsp;{{ programing_num }}</li>
+        </div>
+        
+        <br>
+        <a href="{% url 'new' %}" class="back"> 글 쓰러 가기 </a>
+        
+    </body>
+
+</html>

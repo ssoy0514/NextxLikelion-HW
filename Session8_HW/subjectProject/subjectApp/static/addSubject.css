@@ -1,0 +1,7 @@
+body{
+    color : darkblue;
+    background-color: rgba(173, 240, 197, 0.997);
+    font-family: "Jua";
+    display: flex;
+    flex-direction: column;
+}
