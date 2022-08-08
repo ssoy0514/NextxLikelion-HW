@@ -1,4 +1,4 @@
-# NextxLikelion-HW
+# NextxLikelion-Session15,16 HW
 
 #### 나만의 링크트리 만들기!
 
