@@ -54,6 +54,7 @@
       </div>
     </div>
     <script type="module" src="./static/js/main.js"></script>
+    {% comment %} type="application/javascript" {% endcomment %}
     <h2>LinkTree</h2>
     <ul>
       <div>
@@ -66,7 +67,8 @@
         <h1>{{ category }}</h1>
         {% for link in links %}
             <li>
-                <span class="bold"><a href="{{link.link}}}"}>{{ link.link_name }}</a></span>
+                <span class="bold"><a href="{{link.link}}}">{{ link.link_name }}</a></span>
+                <span class = "cat">| {{ link.category }}</span> 
                 <div class = "memo">{{ link.memo|linebreaks }}</div>   
             </li>
       </div>
@@ -81,10 +83,9 @@
       class="btn-open-modal btn mb-2 bg-green shadow ml-10 mr-10 text-center"
     >ADD
     </div>
-    <div class="wrapper bg-white p-50">
+    
       <div class="heading flex justify-between">
       </div>
-    </div>
   </main>
 <script>
   $('.createCategory').submit((event) => {
@@ -106,12 +107,14 @@
   $('.createLink').submit((event) => {
     event.preventDefault()
     console.log("link실행됨")
+
     let form = $(".createLink")[0]
     let form_data = new FormData(form)
     link = $("#link").val()
     link_name = $("#link_name").val()
     memo = $("#memo").val()
     category = $("#category").val()
+
     form_data.append("name", category_name)
     $.ajax({
       type: "POST",

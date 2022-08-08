@@ -6,21 +6,23 @@ from django.views.generic import CreateView, UpdateView, TemplateView
 # from .forms import AddLinkModelForm, AddCategoryForm
 from django.urls import reverse_lazy
 from django.http import JsonResponse
+from django.views.decorators.csrf import csrf_exempt
 
 # Create your views here.
+@csrf_exempt
 def AddCategoryView(request):
     if request.method == 'POST':
         category = Category.objects.create(
             name = request.POST['name']
         )
         return JsonResponse({'msg': "생성완료"})
-    
+@csrf_exempt
 def AddLinkView(request):
     if request.method == 'POST':
         link = Link.objects.create(
             link = request.POST['link'],
             link_name = request.POST['link_name'],
-            category = request.POST['category'],
+            category = Category.objects.get(name=request.POST['category']),
             memo = request.POST['memo'],
         )
         return JsonResponse({'msg': "link 생성완료"})
